@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bai9.css">
+    <script src="./bai9.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            A Simple Color Picker
+        </h1>
+        <div class="main">
+            <div class="main-left">
+                <p>Background (enter values from '00' to 'FF')</p>
+                <p>
+                    RED: <input type="text" id="red1"> GREEN: <input type="text" id="green1"> BLUE: <input type="text" id="blue1">
+                </p>
+                <p>Text (enter values from '00' to 'FF')</p>
+                <p>
+                    RED: <input type="text" id="red2"> GREEN: <input type="text" id="green2"> BLUE: <input type="text" id="blue2">
+                </p>
+                <p class="button">
+                    <button onclick="Apply(red1.value, green1.value, blue1.value, red2.value, green2.value, blue2.value)">Apply</button>
+                    <button onclick="Reload()">Reload</button>
+                </p>
+            </div>
+            <div class="main-right" id="background-color">
+                <div id="text-color">
+                    <h3 >HAMLET:</h3>
+                    <p>Speak the speech, I pray for you, as I pronounced it to you, trippingly on the tougue: but if you mouth it, as many of your players do, I had as lief the town-crier spoke my lines.</p>
+                </div>
+            </div>
+        </div>
+        <p>*If you are using Netscape, you won't be able to change the text color.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+ tr, td {
+    border: 1px solid #000;
+}
+td {
+    width: 200px;
+    height: 30px;
+}
+body {
+    display: flex;
+    justify-content: center;
+}
+.container {
+    
+    width: fit-content;
+    background-color: aqua;
+}
+.button-row {
+    display: flex;
+    justify-content: center;
+}
+.button-row button {
+    margin-right: 4px;
+}
+input {
+    width: 200px;
+    height: 30px;
+}
+    

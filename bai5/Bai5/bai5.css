@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+table {
+    border: 1px solid #000;
+}
+td {
+    width: 100px;
+    text-align: center;
+}
+
+textarea {
+    resize: none;
+}
+
+.total-row {
+    text-align: right !important;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3</title>
+    <link rel="stylesheet" href="./bai3.css">
+    <script>
+        function giaiPTbac2(a, b, c) {
+            let delta = (b*b) - (4*a*c);
+            let x1, x2;
+            if(delta> 0) {
+                document.getElementById("result").innerHTML = "x1 = " + (-b + Math.sqrt(delta))/(2*a) + "," + "x2 = " + (-b - Math.sqrt(delta))/(2*a);
+            }
+            else if(delta == 0) {
+                document.getElementById("result").innerHTML = "x1 = x2 = " + (-b /(2*a));
+            }
+            else {
+                document.getElementById("result").innerHTML = "Phương trình vô nghiệm";
+            }
+        }
+        // function checkType(a, b, c) {
+        //     if(typeof a.value !== "number" || typeof b.value !== "number" || typeof b.value !== "number") {
+        //         alert("Dữ liệu bạn nhập bị sai")
+        //     }
+        // }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <p>Giải phương trình bậc 2</p>
+        <table>
+            <tr>
+                <td>Hệ số a:</td>
+                <td><input type="text" id="a"></td>
+            </tr>
+            <tr>
+                <td>Hệ số b:</td>
+                <td><input type="" id="b"></td>
+            </tr>
+            <tr>
+                <td>Hệ số c:</td>
+                <td><input type="text" id="c"></td>
+            </tr>
+            <td>
+               <button onclick="giaiPTbac2(a.value, b.value, c.value)">Giải</button>
+               <button>Tiếp</button>
+            </td>
+            <tr>
+                <td>Kết quả</td>
+                <td><label for="" id="result"></label></td>
+            </tr>
+            
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+    <link rel="stylesheet" href="./bai2.css">
+    <script>
+        function Max(a, b, c) {
+            document.getElementById("result").innerHTML = Math.max(a, b, c);
+        }
+
+        function Min(a, b, c) {
+            document.getElementById("result").innerHTML = Math.min(a, b, c);
+        }
+
+        function Sina(a) {
+            document.getElementById("result").innerHTML = Math.sin(a);
+        }
+
+        function Cosa(a) {
+            document.getElementById("result").innerHTML = Math.cos(a);
+        }
+
+        function Pow(a, b) {
+            document.getElementById("result").innerHTML = Math.pow(a, b);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <td>a (số thứ 1):</td>
+                <td><input type="number" id="a"></td>
+            </tr>
+            <tr>
+                <td>b (số thứ 2):</td>
+                <td><input type="number" id="b"></td>
+            </tr>
+            <tr>
+                <td>c (số thứ 3):</td>
+                <td><input type="number" id="c"></td>
+            </tr>
+            <tr>
+                <td>Kết quả</td>
+                <td><label for="" id="result"></label></td>
+            </tr>
+        </table>
+        <div class="button-row">
+
+            <button onclick="Max(a.value, b.value, c.value)">MAX</button>
+            <button onclick="Min(a.value, b.value, c.value)">MIN</button>
+            <button onclick="Sina(a.value)">sin(a)</button>
+            <button onclick="Cosa(a.value)">cos(a)</button>
+            <button onclick="Pow(a.value, b.value)">a^b</button>
+        </div>
+    </div>
+    
+</body>
+</html>

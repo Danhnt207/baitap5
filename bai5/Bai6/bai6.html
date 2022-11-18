@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bai6.css">
+    <script src="./bai6.js" defer></script>
+</head>
+<body bgcolor="darkblue">
+    <div class="img"><img src="https://pic3.iqiyipic.com/image/20201022/51/af/a_100426783_m_601_en_1080_608.jpg " alt="Logo"></div>
+    <h2>Neonatal Feeding Study</h2>
+    <div class="form-flex">
+        <form action="Cau6-Server.html" method="get">
+            <div class="form-row today">
+                <label class="label-today">Today is:</label>
+                <input id="Today" name="today">
+            </div>
+            <div class="form-row">
+                <label for="Name">1) Name (first, last): </label>
+                <input type="text" id="FirstName" name="firstname">
+                <input type="text" id="LastName" name="lastname">
+            </div>
+            <div class="form-row">
+                <label for="Record">2) Medical Record#:</label>
+                <input type="text" id="Record" class="record-width" name="medicalrecord">
+            </div>
+            <div class="form-row">
+                <label for="DOB">3) Date of birth: </label>
+                <input type="date" id="DOB" name="dob">
+            </div>
+            <div class="form-row">
+                <label for="Physician">4) Physician:</label>
+                <select id="Physician" name="physician">
+                    <option value="Warren">Dr. Warren Albert</option>
+                    <option value="Maria">Dr. Maria Alvarez</option>
+                    <option value="Karen">Dr. Karen Brinkman</option>
+                    <option value="Micheal">Dr. Micheal Kerry</option>
+                    <option value="James">Dr. James Jackson</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="Specify" class="label-below">If other (specify):</label>
+                <input type="text" name="specify" id="specify" onmouseleave="Specify(specify.value)">
+            </div>
+            <div class="form-row">
+                <label>5) 1 Minute APGAR Score:<br><span class="label-below">Each score must be 0, 1, or 2</span></label>
+                <label for="Activity">Activity</label>
+                <input type="text" name="act" id="Activity" class="APGAR" onchange="APGAR(Total.value, Activity.value)">
+            </div>
+            <div class="form-row">
+                <label></label>
+                <label for="Pulse">Pulse</label>
+                <input type="text" name="pulse" id="Pulse" class="APGAR" onchange="APGAR(Total.value, Pulse.value)">
+            </div>
+            <div class="form-row">
+                <label></label>
+                <label for="Grimace">Grimace (Reflex, Imitability)</label>
+                <input type="text" name="grim" id="Grimace" class="APGAR" onchange="APGAR(Total.value, Grimace.value)">
+            </div>
+            <div class="form-row">
+                <label></label>
+                <label for="Appearance">Appearance</label>
+                <input type="text" name="apr" id="Appearance" class="APGAR" onchange="APGAR(Total.value, Appearance.value)">
+            </div>
+            <div class="form-row">
+                <label></label>
+                <label for="Respiration">Respiration</label>
+                <input type="text" name="resp" id="Respiration" class="APGAR" onchange="APGAR(Total.value, Respiration.value)">
+            </div>
+            <div class="form-row">
+                <label></label>
+                <label for="TOTAL"><b>TOTAL</b></label>
+                <input type="text" name="total" id="Total" class="APGAR-total">
+            </div>
+
+            <div class="form-row">
+                <label for="Weight">6) Birth weight:<br><span class="label-below">Weight must be >= 1200 gms</span></label>
+                <input type="text" name="birthweight" id="Weight" class="record-width">
+            </div>
+            <div class="form-row">
+                <label for="Consent">7) Parental Consent (required):</label>
+                <input type="checkbox" name="consent" class="checkbox">
+            </div>
+            <div align="center">
+                <input type="submit" value="Register">
+                <input type="reset" value="Cancel">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

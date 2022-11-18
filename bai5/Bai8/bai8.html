@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bai8.css">
+    <script src="./bai8.js" defer></script>
+</head>
+<body>
+    <div class="tab">
+        <div class="button">
+            <button class="tablinks" >HOME</button>
+        </div>
+        <div class="button">
+        <button class="tablinks">HTML</button>
+        </div>
+        <div class="button">
+        <button class="tablinks" onclick="openNav(event, 'css')" >CSS</button>
+        <ul class="tabcontent" id="css" onmouseleave="cssLeave()">
+            <li>CSS CĂN BẢN</li>
+            <li>GIAO DIỆN VỚI CSS</li>
+            <li>CSS NÂNG CAO</li>
+          </ul>
+        </div>
+        <div class="button">
+        <button class="tablinks" onclick="openNav(event, 'javascript')" >JAVASCRIPT</button>
+        <ul class="tabcontent" id="javascript" onmouseleave="jsLeave()">
+            <li>LESSON 1</li>
+            <li>LESSON 2</li>
+            <li>LESSON 3</li>
+        </ul>
+        </div>
+        <div class="button">
+        <button class="tablinks">HTML DOM</button>
+        </div>
+        <div class="button">
+            <button class="tablinks">NGÔN NGỮ ASP</button>
+        </div>
+      </div>
+      
+    
+    
+    
+</body>
+</html>

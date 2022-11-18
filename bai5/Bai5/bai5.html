@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bai5.css">
+    <script src="./bai5.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <th>Mã sản phẩm</th>
+                <th>Tên sản phẩm</th>
+                <th>Giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền</th>
+            </tr>
+            <tr>
+                <td>C112</td>
+                <td>Chuột Quang</td>
+                <td>10$</td>
+                <td><input type="text" name="" id="C112quantity" onchange="C112money(C112quantity.value)"></td>
+                <td><input  id="Cmoney"></input></td>
+            </tr>
+            <tr>
+                <td>B124</td>
+                <td>Bàn phím</td>
+                <td>20$</td>
+                <td><input type="text" name="" id="B124quantity" onchange="B124money(B124quantity.value)"></td>
+                <td><input id="Bmoney"></input></td>
+            </tr>
+            <tr>
+                <td>U125</td>
+                <td>USB KingMax</td>
+                <td>15$</td>
+                <td><input type="text" name="" id="U125quantity" onchange="U125money(U125quantity.value)"></td>
+                <td><input id="Umoney" ></input></td>
+            </tr>
+            <tr>
+                <td colspan="5" class="total-row">
+                    <span>Total</span>
+                    <input  id="total"></input>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" class="total-row" >
+                    <button onclick="Total(Cmoney.value, Bmoney.value, Umoney.value)">Tổng Cộng</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

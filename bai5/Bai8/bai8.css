@@ -1,0 +1,48 @@
+.tab {
+    display: flex;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: fit-content;
+  }
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  .button {
+    position: relative;
+  }
+  .tab button:hover {
+    background-color: orange;
+    color: #fff;
+  }
+  .tabcontent {
+    list-style: none;
+    width: 150px;
+    display: none;
+    border-top: none;
+    border-bottom: none;
+    padding: 0;
+    margin-top: 0;
+    position: absolute;
+    top: 101%;
+  }
+
+  .tabcontent li {
+    border: 1px solid green;
+    padding: 8px;
+  }
+  .tabcontent li:hover {
+    background-color: greenyellow;
+    cursor: pointer;
+  }

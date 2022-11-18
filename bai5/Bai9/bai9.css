@@ -1,0 +1,25 @@
+
+.container {
+    max-width: 800px;
+}
+
+.main {
+    display: flex;
+}
+h1 {
+    text-align: center;
+}
+input {
+    width: 40px;
+}
+
+.main-left, .main-right {
+    margin-right: 2px;
+    flex-basis: 50%;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.button {
+    text-align: center;
+}

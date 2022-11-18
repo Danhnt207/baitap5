@@ -1,0 +1,82 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    background-color: green;
+    background-image: url(./Hinh/Wrap.jpg);
+}
+
+.main {
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+}
+
+.main-left {
+    flex-basis: 20%;
+    background-color: #000;
+}
+.main-left-heading {
+    color: #fff;
+    margin: 20px 10px;
+}
+
+.main-left ul {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.main-left ul li a {
+    text-decoration: none;
+    color: green;
+}
+.main-left ul li a:hover {
+    color: red;
+}
+.date-time {
+    font-weight: 600;
+    background-color: orange;
+    padding: 2px 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.main-right {
+    flex-basis: 80%;
+    background-color: #fff;
+}
+.main-right__content {
+    display: flex;
+}
+.main-right-logo, .date-time {
+    text-align: center;
+}
+
+.content {
+    flex-basis: 50%;
+}
+.content-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: green;
+}
+.img1 {
+    float: left;
+}
+.img-watkin {
+    float: right;
+}
+
+.content-des img {
+    width: 70px;
+    height: 90px;
+}
+p {
+    margin: 12px 0;
+}
+.footer {
+    text-align: center;
+    color: green;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bai1.css">
+    <script src="./get.js" async></script>
+</head>
+<body>
+    <div class="container">
+        <form action="./get.html" method="get">
+            <div class="row">
+                <label for="name">Họ và tên:</label>
+                <input type="text" name="name" >
+            </div>
+            <div class="row">
+                <label for="email">Email:</label>
+                <input type="email" name="email" >
+            </div>
+            <div class="row">
+                <label for="gender">Giới tính:</label>
+                <input type="radio" name="gender" value="0">Nam
+                <input type="radio" name="gender"  value="1">Nữ
+            </div>
+            <div class="row">
+                <input type="checkbox" name="job" >
+                Tôi đã có nghề nghiệp ổn định
+            </div>
+            <div class="row">
+                <label for="from" >Đến từ</label>
+                <select name="region" id="from">
+                    <option value="north">Miền Bắc</option>
+                    <option value="mid">Miền Trung</option>
+                    <option value="south">Miền Nam</option>
+                    <option value="west">Miền Tây</option>
+                </select>
+            </div>
+            <div class="row">
+                Nội dung cần phản hồi với chúng tôi:
+            </div>
+            <div class="row">
+                <textarea name="content" cols="30" rows="10" placeholder="Nhập nội dung ở đây"></textarea>
+            </div>
+            <div class="button">
+                <input type="submit" name="submit" value="Gửi thông điệp">
+                <input type="reset" name="reset" value="Nhập lại tất cả">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

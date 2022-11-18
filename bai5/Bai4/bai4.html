@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bai4.css">
+    <script src="./bai4.js" async></script>
+</head>
+<body>
+    <div class="container">
+        <h2 class="heading">
+            Sử dụng các hàm xử lý chuỗi
+        </h2>
+        <div class="row">
+            <fieldset class="col1">
+                <legend><h2>Nhập dữ liệu</h2></legend>
+                <textarea name="" id="input" cols="30" rows="10"></textarea>
+            </fieldset>
+            <fieldset class="col1">
+                <legend><h2>Kết quả</h2></legend>
+                <textarea name="" id="output" cols="30" rows="10"></textarea>
+            </fieldset>
+        </div>
+        <div class="row">
+            <input type="" value="Nhập dữ liệu" class="col1" onclick="inputData()">
+            <input type="" value="Đếm kí tự hoa" class="col1" onclick="countUpperCase(input.value)">
+        </div>
+        <div class="row">
+            <input type="" value="In chữ Hoa" class="col1" onclick="upperCase(input.value)">
+            <input type="" value="In mỗi từ trên dòng" class="col1" onclick="writeLine(input.value)">
+        </div>
+        <div class="row">
+            <input type="" value="In chữ thường" class="col1"  onclick="lowerCase(input.value)">
+            <input type="" value="Đếm số từ" class="col1" onclick="wordCount(input.value)">
+        </div>
+        <div class="row">
+            <input type="" value="Đếm số kí tự thường" class="col1" onclick="countLowerCase(input.value)">
+            <input type="" value="In nguyên âm, phụ âm" class="col1" onclick="vowel_Consonant(input.value)">
+        </div>
+        <div class="row">
+            <input  name="" id="view" value="Xem Website xử lý chuỗi w3c" onclick="viewWebsite()">
+        </div>
+    </div>
+</body>
+</html>
